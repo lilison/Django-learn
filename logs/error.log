@@ -1,0 +1,174 @@
+[2024-01-03 20:18:40,109][django.request.log_response():241] [ERROR] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\Django_learn\app_user\views.py", line 158, in post
+    if send_user_email(email, 'register'):
+  File "D:\project\Django_learn\app_user\utils\send_email.py", line 85, in send_user_email
+    homepage = request.META['HTTP_HOST']
+AttributeError: 'NoneType' object has no attribute 'META'
+[2024-01-03 20:18:40,110][django.server.log_message():212] [ERROR] "POST /register/ HTTP/1.1" 500 90608
+[2024-01-03 20:19:11,043][django.request.log_response():241] [ERROR] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\Django_learn\app_user\views.py", line 158, in post
+    if send_user_email(email, 'register'):
+  File "D:\project\Django_learn\app_user\utils\send_email.py", line 85, in send_user_email
+    homepage = request.META['HTTP_HOST']
+AttributeError: 'NoneType' object has no attribute 'META'
+[2024-01-03 20:19:11,044][django.server.log_message():212] [ERROR] "POST /register/ HTTP/1.1" 500 90626
+[2024-01-03 20:29:12,188][django.request.log_response():241] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: app_user_emailinfo
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\Django_learn\app_user\views.py", line 33, in get
+    config_email = EmailInfo.objects.filter(email_type='send').exists()
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: app_user_emailinfo
+[2024-01-03 20:29:12,190][django.server.log_message():212] [ERROR] "GET / HTTP/1.1" 500 141360
+[2024-01-03 20:45:20,500][django.request.log_response():241] [ERROR] Internal Server Error: /set-new-web-email/
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view app_user.views.view didn't return an HttpResponse object. It returned None instead.
+[2024-01-03 20:45:20,501][django.server.log_message():212] [ERROR] "POST /set-new-web-email/ HTTP/1.1" 500 76326
+[2024-01-03 20:18:40,109][django.request.log_response():241] [ERROR] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\Django_learn\app_user\views.py", line 158, in post
+    if send_user_email(email, 'register'):
+  File "D:\project\Django_learn\app_user\utils\send_email.py", line 85, in send_user_email
+    homepage = request.META['HTTP_HOST']
+AttributeError: 'NoneType' object has no attribute 'META'
+[2024-01-03 20:18:40,110][django.server.log_message():212] [ERROR] "POST /register/ HTTP/1.1" 500 90608
+[2024-01-03 20:19:11,043][django.request.log_response():241] [ERROR] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\Django_learn\app_user\views.py", line 158, in post
+    if send_user_email(email, 'register'):
+  File "D:\project\Django_learn\app_user\utils\send_email.py", line 85, in send_user_email
+    homepage = request.META['HTTP_HOST']
+AttributeError: 'NoneType' object has no attribute 'META'
+[2024-01-03 20:19:11,044][django.server.log_message():212] [ERROR] "POST /register/ HTTP/1.1" 500 90626
+[2024-01-03 20:29:12,188][django.request.log_response():241] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: app_user_emailinfo
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\Django_learn\app_user\views.py", line 33, in get
+    config_email = EmailInfo.objects.filter(email_type='send').exists()
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: app_user_emailinfo
+[2024-01-03 20:29:12,190][django.server.log_message():212] [ERROR] "GET / HTTP/1.1" 500 141360
+[2024-01-03 20:45:20,500][django.request.log_response():241] [ERROR] Internal Server Error: /set-new-web-email/
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view app_user.views.view didn't return an HttpResponse object. It returned None instead.
+[2024-01-03 20:45:20,501][django.server.log_message():212] [ERROR] "POST /set-new-web-email/ HTTP/1.1" 500 76326

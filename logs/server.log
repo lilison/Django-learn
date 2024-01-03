@@ -11,3 +11,363 @@
 [2024-01-03 13:09:45,547][django.server.log_message():212] [WARNING] "GET / HTTP/1.1" 404 2438
 [2024-01-03 13:09:45,619][django.request.log_response():241] [WARNING] Not Found: /favicon.ico
 [2024-01-03 13:09:45,620][django.server.log_message():212] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2489
+[2024-01-03 19:40:38,017][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 19:40:39,316][django.request.log_response():241] [WARNING] Not Found: /
+[2024-01-03 19:40:39,316][django.server.log_message():212] [WARNING] "GET / HTTP/1.1" 404 2438
+[2024-01-03 19:40:39,373][django.request.log_response():241] [WARNING] Not Found: /favicon.ico
+[2024-01-03 19:40:39,373][django.server.log_message():212] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2489
+[2024-01-03 19:48:35,251][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\Django_learn\urls.py changed, reloading.
+[2024-01-03 19:48:35,609][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 19:50:06,787][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\apps.py changed, reloading.
+[2024-01-03 19:50:07,111][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 19:52:05,877][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:00:22,567][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\views.py changed, reloading.
+[2024-01-03 20:00:22,863][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:06:08,762][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:06:09,182][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:08:21,391][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:08:21,707][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:11:01,481][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:11:01,826][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:12:08,498][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:12:08,843][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:12:58,811][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:14:05,085][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:15:22,037][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:15:22,373][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:16:37,274][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:16:37,587][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:18:03,778][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:18:05,016][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 9053
+[2024-01-03 20:18:05,357][django.server.log_message():212] [INFO] "GET /static/jquery/jquery.cookie.js HTTP/1.1" 200 3121
+[2024-01-03 20:18:05,361][django.server.log_message():212] [INFO] "GET /static/bootstrap/js/bootstrap.js HTTP/1.1" 200 115048
+[2024-01-03 20:18:05,363][django.server.log_message():212] [INFO] "GET /static/theme/theme.css HTTP/1.1" 200 210130
+[2024-01-03 20:18:05,364][django.server.log_message():212] [INFO] "GET /static/self-css/self-css.css HTTP/1.1" 200 209
+[2024-01-03 20:18:05,367][django.server.log_message():212] [INFO] "GET /static/bootstrap-tagsinput/bootstrap-tagsinput.min.js HTTP/1.1" 200 9377
+[2024-01-03 20:18:05,368][django.server.log_message():212] [INFO] "GET /static/bootstrap-select/js/bootstrap-select.min.js HTTP/1.1" 200 33090
+[2024-01-03 20:18:05,369][django.server.log_message():212] [INFO] "GET /static/input-mask/input-mask.min.js HTTP/1.1" 200 7987
+[2024-01-03 20:18:05,370][django.server.log_message():212] [INFO] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 144877
+[2024-01-03 20:18:05,372][django.server.log_message():212] [INFO] "GET /static/textarea-autosize/textarea-autosize.min.js HTTP/1.1" 200 3700
+[2024-01-03 20:18:05,372][django.server.log_message():212] [INFO] "GET /static/nouislider/js/nouislider.min.js HTTP/1.1" 200 22052
+[2024-01-03 20:18:05,373][django.server.log_message():212] [INFO] "GET /static/theme/theme.js HTTP/1.1" 200 6729
+[2024-01-03 20:18:05,375][django.server.log_message():212] [INFO] "GET /static/self-js/self-function.js HTTP/1.1" 200 869
+[2024-01-03 20:18:05,375][django.server.log_message():212] [INFO] "GET /static/layer/layer.js HTTP/1.1" 200 22116
+[2024-01-03 20:18:05,376][django.server.log_message():212] [INFO] "GET /static/jquery/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[2024-01-03 20:18:05,378][django.server.log_message():212] [INFO] "GET /static/boostrap-icon/font/bootstrap-icons.css HTTP/1.1" 200 98255
+[2024-01-03 20:18:05,380][django.server.log_message():212] [INFO] "GET /static/popper/popper.min.js HTTP/1.1" 200 19033
+[2024-01-03 20:18:05,388][django.server.log_message():212] [INFO] "GET /static/fontawesome/js/fontawesome-all.min.js HTTP/1.1" 200 672449
+[2024-01-03 20:18:05,398][django.server.log_message():212] [INFO] "GET /static/layer/theme/default/layer.css?v=3.1.1 HTTP/1.1" 200 14367
+[2024-01-03 20:18:05,435][django.server.log_message():212] [INFO] "GET /static/favicon/favicon.ico HTTP/1.1" 200 15406
+[2024-01-03 20:18:09,590][django.server.log_message():212] [INFO] "GET /login/ HTTP/1.1" 200 6176
+[2024-01-03 20:18:09,595][django.server.log_message():212] [INFO] "GET /static/self-js/login.js?1704284289 HTTP/1.1" 200 0
+[2024-01-03 20:18:09,596][django.server.log_message():212] [INFO] "GET /static/favicon/android-chrome-192x192.png HTTP/1.1" 200 72989
+[2024-01-03 20:18:14,418][django.server.log_message():212] [INFO] "GET /register/?before_step=login HTTP/1.1" 200 6338
+[2024-01-03 20:18:14,425][django.server.log_message():212] [INFO] "GET /static/self-js/register.js?1704284294 HTTP/1.1" 200 0
+[2024-01-03 20:18:40,109][django.request.log_response():241] [ERROR] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\Django_learn\app_user\views.py", line 158, in post
+    if send_user_email(email, 'register'):
+  File "D:\project\Django_learn\app_user\utils\send_email.py", line 85, in send_user_email
+    homepage = request.META['HTTP_HOST']
+AttributeError: 'NoneType' object has no attribute 'META'
+[2024-01-03 20:18:40,110][django.server.log_message():212] [ERROR] "POST /register/ HTTP/1.1" 500 90608
+[2024-01-03 20:19:04,516][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:19:04,866][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:19:11,043][django.request.log_response():241] [ERROR] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\Django_learn\app_user\views.py", line 158, in post
+    if send_user_email(email, 'register'):
+  File "D:\project\Django_learn\app_user\utils\send_email.py", line 85, in send_user_email
+    homepage = request.META['HTTP_HOST']
+AttributeError: 'NoneType' object has no attribute 'META'
+[2024-01-03 20:19:11,044][django.server.log_message():212] [ERROR] "POST /register/ HTTP/1.1" 500 90626
+[2024-01-03 20:23:22,493][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:23:29,192][django.server.log_message():212] [INFO] "POST /register/ HTTP/1.1" 200 6426
+[2024-01-03 20:23:29,268][django.server.log_message():212] [INFO] "GET /static/self-js/register.js?1704284609 HTTP/1.1" 200 0
+[2024-01-03 20:24:03,008][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 9053
+[2024-01-03 20:24:03,699][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:24:04,022][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:29:08,992][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\views.py changed, reloading.
+[2024-01-03 20:29:09,320][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:29:12,188][django.request.log_response():241] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: app_user_emailinfo
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\Django_learn\app_user\views.py", line 33, in get
+    config_email = EmailInfo.objects.filter(email_type='send').exists()
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: app_user_emailinfo
+[2024-01-03 20:29:12,190][django.server.log_message():212] [ERROR] "GET / HTTP/1.1" 500 141360
+[2024-01-03 20:30:37,734][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\models.py changed, reloading.
+[2024-01-03 20:30:38,074][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:31:06,085][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 9054
+[2024-01-03 20:33:11,048][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5728
+[2024-01-03 20:33:25,283][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5498
+[2024-01-03 20:33:37,800][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5498
+[2024-01-03 20:36:03,731][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5754
+[2024-01-03 20:36:26,942][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5547
+[2024-01-03 20:36:30,366][django.server.log_message():212] [INFO] "POST /login/ HTTP/1.1" 200 6206
+[2024-01-03 20:36:30,437][django.server.log_message():212] [INFO] "GET /static/self-js/login.js?1704285390 HTTP/1.1" 200 0
+[2024-01-03 20:41:39,737][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\Django_learn\urls.py changed, reloading.
+[2024-01-03 20:41:40,070][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:41:53,455][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\views.py changed, reloading.
+[2024-01-03 20:41:53,771][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:41:57,811][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:42:43,875][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:42:59,363][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\Django_learn\urls.py changed, reloading.
+[2024-01-03 20:42:59,691][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:43:14,264][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:44:55,449][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:45:17,325][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5559
+[2024-01-03 20:45:20,500][django.request.log_response():241] [ERROR] Internal Server Error: /set-new-web-email/
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view app_user.views.view didn't return an HttpResponse object. It returned None instead.
+[2024-01-03 20:45:20,501][django.server.log_message():212] [ERROR] "POST /set-new-web-email/ HTTP/1.1" 500 76326
+[2024-01-03 20:46:39,114][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\views.py changed, reloading.
+[2024-01-03 20:46:39,435][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:47:08,650][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:47:11,087][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5724
+[2024-01-03 20:55:52,272][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5817
+[2024-01-03 20:56:35,334][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5849
+[2024-01-03 20:56:58,709][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5829
+[2024-01-03 20:57:07,928][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5844
+[2024-01-03 19:40:38,017][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 19:40:39,316][django.request.log_response():241] [WARNING] Not Found: /
+[2024-01-03 19:40:39,316][django.server.log_message():212] [WARNING] "GET / HTTP/1.1" 404 2438
+[2024-01-03 19:40:39,373][django.request.log_response():241] [WARNING] Not Found: /favicon.ico
+[2024-01-03 19:40:39,373][django.server.log_message():212] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2489
+[2024-01-03 19:48:35,251][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\Django_learn\urls.py changed, reloading.
+[2024-01-03 19:48:35,609][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 19:50:06,787][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\apps.py changed, reloading.
+[2024-01-03 19:50:07,111][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 19:52:05,877][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:00:22,567][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\views.py changed, reloading.
+[2024-01-03 20:00:22,863][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:06:08,762][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:06:09,182][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:08:21,391][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:08:21,707][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:11:01,481][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:11:01,826][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:12:08,498][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:12:08,843][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:12:58,811][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:14:05,085][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:15:22,037][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:15:22,373][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:16:37,274][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:16:37,587][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:18:03,778][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:18:05,016][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 9053
+[2024-01-03 20:18:05,357][django.server.log_message():212] [INFO] "GET /static/jquery/jquery.cookie.js HTTP/1.1" 200 3121
+[2024-01-03 20:18:05,361][django.server.log_message():212] [INFO] "GET /static/bootstrap/js/bootstrap.js HTTP/1.1" 200 115048
+[2024-01-03 20:18:05,363][django.server.log_message():212] [INFO] "GET /static/theme/theme.css HTTP/1.1" 200 210130
+[2024-01-03 20:18:05,364][django.server.log_message():212] [INFO] "GET /static/self-css/self-css.css HTTP/1.1" 200 209
+[2024-01-03 20:18:05,367][django.server.log_message():212] [INFO] "GET /static/bootstrap-tagsinput/bootstrap-tagsinput.min.js HTTP/1.1" 200 9377
+[2024-01-03 20:18:05,368][django.server.log_message():212] [INFO] "GET /static/bootstrap-select/js/bootstrap-select.min.js HTTP/1.1" 200 33090
+[2024-01-03 20:18:05,369][django.server.log_message():212] [INFO] "GET /static/input-mask/input-mask.min.js HTTP/1.1" 200 7987
+[2024-01-03 20:18:05,370][django.server.log_message():212] [INFO] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 144877
+[2024-01-03 20:18:05,372][django.server.log_message():212] [INFO] "GET /static/textarea-autosize/textarea-autosize.min.js HTTP/1.1" 200 3700
+[2024-01-03 20:18:05,372][django.server.log_message():212] [INFO] "GET /static/nouislider/js/nouislider.min.js HTTP/1.1" 200 22052
+[2024-01-03 20:18:05,373][django.server.log_message():212] [INFO] "GET /static/theme/theme.js HTTP/1.1" 200 6729
+[2024-01-03 20:18:05,375][django.server.log_message():212] [INFO] "GET /static/self-js/self-function.js HTTP/1.1" 200 869
+[2024-01-03 20:18:05,375][django.server.log_message():212] [INFO] "GET /static/layer/layer.js HTTP/1.1" 200 22116
+[2024-01-03 20:18:05,376][django.server.log_message():212] [INFO] "GET /static/jquery/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[2024-01-03 20:18:05,378][django.server.log_message():212] [INFO] "GET /static/boostrap-icon/font/bootstrap-icons.css HTTP/1.1" 200 98255
+[2024-01-03 20:18:05,380][django.server.log_message():212] [INFO] "GET /static/popper/popper.min.js HTTP/1.1" 200 19033
+[2024-01-03 20:18:05,388][django.server.log_message():212] [INFO] "GET /static/fontawesome/js/fontawesome-all.min.js HTTP/1.1" 200 672449
+[2024-01-03 20:18:05,398][django.server.log_message():212] [INFO] "GET /static/layer/theme/default/layer.css?v=3.1.1 HTTP/1.1" 200 14367
+[2024-01-03 20:18:05,435][django.server.log_message():212] [INFO] "GET /static/favicon/favicon.ico HTTP/1.1" 200 15406
+[2024-01-03 20:18:09,590][django.server.log_message():212] [INFO] "GET /login/ HTTP/1.1" 200 6176
+[2024-01-03 20:18:09,595][django.server.log_message():212] [INFO] "GET /static/self-js/login.js?1704284289 HTTP/1.1" 200 0
+[2024-01-03 20:18:09,596][django.server.log_message():212] [INFO] "GET /static/favicon/android-chrome-192x192.png HTTP/1.1" 200 72989
+[2024-01-03 20:18:14,418][django.server.log_message():212] [INFO] "GET /register/?before_step=login HTTP/1.1" 200 6338
+[2024-01-03 20:18:14,425][django.server.log_message():212] [INFO] "GET /static/self-js/register.js?1704284294 HTTP/1.1" 200 0
+[2024-01-03 20:18:40,109][django.request.log_response():241] [ERROR] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\Django_learn\app_user\views.py", line 158, in post
+    if send_user_email(email, 'register'):
+  File "D:\project\Django_learn\app_user\utils\send_email.py", line 85, in send_user_email
+    homepage = request.META['HTTP_HOST']
+AttributeError: 'NoneType' object has no attribute 'META'
+[2024-01-03 20:18:40,110][django.server.log_message():212] [ERROR] "POST /register/ HTTP/1.1" 500 90608
+[2024-01-03 20:19:04,516][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:19:04,866][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:19:11,043][django.request.log_response():241] [ERROR] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\Django_learn\app_user\views.py", line 158, in post
+    if send_user_email(email, 'register'):
+  File "D:\project\Django_learn\app_user\utils\send_email.py", line 85, in send_user_email
+    homepage = request.META['HTTP_HOST']
+AttributeError: 'NoneType' object has no attribute 'META'
+[2024-01-03 20:19:11,044][django.server.log_message():212] [ERROR] "POST /register/ HTTP/1.1" 500 90626
+[2024-01-03 20:23:22,493][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:23:29,192][django.server.log_message():212] [INFO] "POST /register/ HTTP/1.1" 200 6426
+[2024-01-03 20:23:29,268][django.server.log_message():212] [INFO] "GET /static/self-js/register.js?1704284609 HTTP/1.1" 200 0
+[2024-01-03 20:24:03,008][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 9053
+[2024-01-03 20:24:03,699][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\utils\send_email.py changed, reloading.
+[2024-01-03 20:24:04,022][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:29:08,992][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\views.py changed, reloading.
+[2024-01-03 20:29:09,320][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:29:12,188][django.request.log_response():241] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: app_user_emailinfo
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\Django_learn\app_user\views.py", line 33, in get
+    config_email = EmailInfo.objects.filter(email_type='send').exists()
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: app_user_emailinfo
+[2024-01-03 20:29:12,190][django.server.log_message():212] [ERROR] "GET / HTTP/1.1" 500 141360
+[2024-01-03 20:30:37,734][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\models.py changed, reloading.
+[2024-01-03 20:30:38,074][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:31:06,085][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 9054
+[2024-01-03 20:33:11,048][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5728
+[2024-01-03 20:33:25,283][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5498
+[2024-01-03 20:33:37,800][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5498
+[2024-01-03 20:36:03,731][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5754
+[2024-01-03 20:36:26,942][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5547
+[2024-01-03 20:36:30,366][django.server.log_message():212] [INFO] "POST /login/ HTTP/1.1" 200 6206
+[2024-01-03 20:36:30,437][django.server.log_message():212] [INFO] "GET /static/self-js/login.js?1704285390 HTTP/1.1" 200 0
+[2024-01-03 20:41:39,737][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\Django_learn\urls.py changed, reloading.
+[2024-01-03 20:41:40,070][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:41:53,455][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\views.py changed, reloading.
+[2024-01-03 20:41:53,771][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:41:57,811][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:42:43,875][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:42:59,363][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\Django_learn\urls.py changed, reloading.
+[2024-01-03 20:42:59,691][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:43:14,264][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:44:55,449][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:45:17,325][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5559
+[2024-01-03 20:45:20,500][django.request.log_response():241] [ERROR] Internal Server Error: /set-new-web-email/
+Traceback (most recent call last):
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\leisa\envs\Django_learn\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view app_user.views.view didn't return an HttpResponse object. It returned None instead.
+[2024-01-03 20:45:20,501][django.server.log_message():212] [ERROR] "POST /set-new-web-email/ HTTP/1.1" 500 76326
+[2024-01-03 20:46:39,114][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\views.py changed, reloading.
+[2024-01-03 20:46:39,435][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:47:08,650][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:47:11,087][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5724
+[2024-01-03 20:55:52,272][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5817
+[2024-01-03 20:56:35,334][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5849
+[2024-01-03 20:56:58,709][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5829
+[2024-01-03 20:57:07,928][django.server.log_message():212] [INFO] "GET / HTTP/1.1" 200 5844
+[2024-01-03 20:58:07,399][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\apps.py changed, reloading.
+[2024-01-03 20:58:07,730][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader
+[2024-01-03 20:58:09,877][django.utils.autoreload.trigger_reload():266] [INFO] D:\project\Django_learn\app_user\models.py changed, reloading.
+[2024-01-03 20:58:10,574][django.utils.autoreload.run_with_reloader():668] [INFO] Watching for file changes with StatReloader

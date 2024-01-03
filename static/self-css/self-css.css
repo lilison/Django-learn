@@ -1,0 +1,8 @@
+.self-alert {
+    position: absolute !important;
+    width:100% !important;
+    top: 50px !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    text-align: center;
+}

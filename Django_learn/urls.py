@@ -20,10 +20,21 @@ from django.urls import path, re_path, include
 from django.views.static import serve
 
 from Django_learn.settings import MEDIA_ROOT
+from app_user.views import (SetNewWebEmail, Home, Welcome, LoginView, RegisterView, ActiveUser, LogoutView,
+                            FindPassword, ResetPassword)
 
 urlpatterns = [
+    re_path('^set-new-web-email/$', SetNewWebEmail.as_view(), name='首次设置邮箱'),  # 首次设置邮箱页面的 URL 模式
     path('admin/', admin.site.urls),
     re_path(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),
     re_path(r'^static/(?P<path>.*)$', serve, {'document_root': STATIC_ROOT}, name='静态'),
     re_path(r'user/', include(('app_user.urls', 'user'), namespace='user')),
+    path('', Home.as_view(), name='主页'),  # 应用程序的主页
+    re_path('^Welcome/$', Welcome.as_view(), name='欢迎页面'),  # 欢迎页面
+    re_path('^login/$', LoginView.as_view(), name='登录'),  # 登录页面的 URL 模式
+    re_path('^register/$', RegisterView.as_view(), name='注册'),  # 注册页面的 URL 模式
+    re_path('active/(?P<active_code>.*)/', ActiveUser.as_view(), name='激活账户'),
+    re_path('^log-out/$', LogoutView.as_view(), name='退出'),  # 退出登录页面的 URL 模式
+    re_path('^find-password/$', FindPassword.as_view(), name='找回密码'),  # 退出登录页面的 URL 模式
+    re_path('^password-reset/(?P<reset_code>.*)/', ResetPassword.as_view(), name='重置密码'),
 ]

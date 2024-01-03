@@ -1,0 +1,446 @@
+{% extends 'TemplateBase.html' %} {% load static  %} {% block title %} {% endblock %} {% block style %}
+<style>
+    ul li {
+        list-style: none;
+
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #dfe1e1;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    /*top nav*/
+    .nav {
+        width: 100%;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .topNav {
+        width: 600px;
+        height: 26px;
+        color: white;
+        margin: auto;
+        /*line-height: 50px;*/
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .topNav h3 {
+        float: left;
+    }
+
+    .topNav input {
+        float: right;
+        width: 380px;
+        height: 24px;
+        box-shadow: 1px 1px 10px #dfe1e1 inset;
+        border-radius: 10px;
+    }
+
+    /*todo list*/
+    .todo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .lists {
+        width: 600px;
+        height: 100%;
+        padding: 20px 0 10px 0;
+        margin: auto;
+    }
+
+    .todoNav {
+        width: 600px;
+        height: 30px;
+    }
+
+    .title1 {
+        width: 300px;
+        height: 18px;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+        float: left;
+        line-height: 18px;
+        /*    margin-top: 20px;
+    margin-bottom: 10px;*/
+
+    }
+
+    .todoCount {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        font-size: 13px;
+        font-weight: bold;
+        color: black;
+        float: right;
+        text-align: center;
+        line-height: 18px;
+        background: #82b5b2;
+        /*margin-top: 20px;
+    margin-bottom: 10px;*/
+    }
+    .todoList {
+        width: 600px;
+    }
+
+    .todoList ul {
+        width: 600px;
+        margin: auto;
+    }
+    .todoList li {
+        width: 587px;
+        height: 30px;
+        padding: 0 5px;
+        margin: 5px 0;
+        background: white;
+        line-height: 30px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-left: 3px solid #0b423e;
+    }
+
+
+    /*done list*/
+    .done {
+        width: 100%;
+        height: 100%;
+    }
+
+    .lists1 {
+        width: 600px;
+        height: 100%;
+        padding: 20px 0 10px 0;
+        margin: auto;
+    }
+
+    .doneNav {
+        width: 600px;
+        height: 30px;
+    }
+
+    .title2 {
+        width: 300px;
+        height: 18px;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+        float: left;
+        line-height: 18px;
+        /*margin-top: 20px;
+    margin-bottom: 10px;*/
+
+    }
+
+    .doneCount {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        font-size: 13px;
+        font-weight: bold;
+        color: black;
+        float: right;
+        text-align: center;
+        line-height: 18px;
+        background: #82b5b2;
+        /*margin-top: 20px;
+    margin-bottom: 10px;*/
+    }
+
+    .doneList {
+        width: 600px;
+    }
+
+    .doneList ul {
+        width: 600px;
+        margin: auto;
+    }
+
+    .doneList li {
+        width: 587px;
+        height: 30px;
+        padding: 0 5px;
+        margin: 5px 0;
+        background: white;
+        line-height: 30px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-left: 3px solid #0b423e;
+    }
+
+    /*site foot*/
+    .siteFoot {
+        width: 100%;
+        height: 100%;
+    }
+
+    .foot {
+        width: 600px;
+        height: 30px;
+        margin: auto;
+        text-align: center;
+        line-height: 30px;
+    }
+
+
+
+
+    .content {
+        width: 500px;
+        height: 27px;
+        color: black;
+        font-size: 15px;
+        background: white;
+        line-height: 27px;
+        border: none;
+    }
+
+    .content:hover {
+        border: 1px solid skyblue;
+    }
+
+    .listSpan {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        font-size: 13px;
+        font-weight: bold;
+        color: black;
+        float: right;
+        text-align: center;
+        line-height: 18px;
+        background: #82b5b2;
+        margin-top: 6px;
+    }
+
+    .listSpan:hover {
+        cursor: pointer;
+    }
+
+    .checkBox {
+        width: 18px;
+        height: 18px;
+        margin-top: 8px;
+    }
+
+    .to_do_len {
+        /* width: 150px;
+        height: 150px;
+        background-color: #149b67; */
+        color: #eb1e28 !important;
+        /* font-size: 130px; */
+    }
+</style>
+<br>
+<div class='card m-auto ' style="width: 96%;">
+    <div class='card-body'>
+        <div class='card-text'>
+
+            <div class="row">
+
+            <!-- <div class="col-sm-6">
+                <div class="card-body" style="width: 96%;">
+
+
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="/media/{{request.user.image}}" alt="" class="media-object"
+                                style="width:450px" />
+                        </div>
+                    </div>
+
+
+                </div>
+            </div> -->
+
+ 
+                <div class="col-md-5">
+                    <div class="card-body" style="width: 96%;">
+
+                        <ul>
+                            <li>
+                                <div class="alert alert-info">
+                                    <strong>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：
+                                        <span id = "{{ request.user.username }}">
+                                            {{request.user.first_name}}{{request.user.last_name}}
+                                            ({{ request.user.username }})
+                                        </span></strong>
+                                  </div>
+                            </li>
+
+                            <li>
+                                <div class="alert alert-success">
+                                    <strong>用&nbsp;&nbsp;户&nbsp;&nbsp;组：
+                                        <span>{% for groups in user.groups.all %}
+                                            {{ groups }}&nbsp
+                                            {% endfor %}
+                                        </span></strong>
+                                  </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<br />
+<div class='card m-auto ' style="width: 96%;">
+    <div class='card-body'>
+        <div class='card-text'>
+            <div class="jumbotron">
+                <h1>实验室信息管理系统</h1>
+                <br>
+                <ul>
+                    <li>
+                        <p>物资管理</p>
+                        <p>设备管理</p>
+                    </li>
+                    <br>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+<div class='card m-auto' style="width:96%;">
+    <div class='card-body'>
+        <div class='card-text'>
+            <div class="alert alert-warning">
+                <strong>技术支持</strong>
+                <br/>
+                <a href=mailto:lisheng.gan@faw-vw.com>甘李生(18566079130)</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- 模态框（Modal） -->
+<!-- 模态框 -->
+<div class="modal fade" id="to_do_myModal">
+    <div class="modal-dialog modal-lg" style="width:95%">
+      <div class="modal-content">
+   
+        <!-- 模态框头部 -->
+        <div class="modal-header">
+          <h4 class="modal-title">待办事项</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+   
+        <!-- 模态框主体 -->
+        <div class="modal-body">
+            <ul>
+                {% if plan_problem_plan_count > 0 %}
+                <li>
+                    <div class="alert  alert-danger">
+                        <strong>批量监控警告事项&nbsp;&nbsp;
+                            <a href="#" onclick="parent.xadmin.add_tab('批量监控计划管理','/labor/task_plan_manage/');return false;">
+                                <span class="to_do_len">{{plan_problem_plan_count}}</span>
+                            </a>
+                        </strong>
+                      </div>
+                </li>
+                {% endif %}
+
+                {% if equ_problem_count > 0 %}
+                <li>
+                    
+                    <div class="alert  alert-danger">
+                        <strong>设备管理警告事项&nbsp;&nbsp;
+                            <a href="#" onclick="parent.xadmin.add_tab('设备管理','/labor/equipment_manage/');return false;">
+                                <span class="to_do_len">{{equ_problem_count}}</span>
+                                
+                            </a>
+                        </strong>
+                      </div>
+                </li>
+                {% endif %}
+
+                {% if plan_vw_status_problem_count > 0 %}
+                <li>
+                    
+                    <div class="alert  alert-danger">
+                        <strong>一汽大众未审核零件数&nbsp;&nbsp;
+                            <a href="#" onclick="parent.xadmin.add_tab('零件管理','/labor/part_manage/');return false;">
+                                <span class="to_do_len">{{plan_vw_status_problem_count}}</span>
+                                
+                            </a>
+                        </strong>
+                      </div>
+                </li>
+                {% endif %}
+
+                {% if member_vw_status_problem_count > 0 %}
+                <li>
+                    
+                    <div class="alert  alert-danger" onclick="parent.xadmin.add_tab('组织机构','/labor/labor_member_manage/');return false;">
+                        <strong>一汽大众未审核人员能力数量&nbsp;&nbsp;
+                            <a href="#">
+                                <span class="to_do_len">{{member_vw_status_problem_count}}</span>
+                                
+                            </a>
+                        </strong>
+                      </div>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+   
+        <!-- 模态框底部 -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+        </div>
+   
+      </div>
+    </div>
+  </div>
+<br />
+
+{% endblock %}
+
+{% block jsin %}
+<script>
+    let menu_info = "/ Home"
+    $('#current-page').html(menu_info);
+</script>
+<script>
+    {% comment %} var problem_1 = $('#problem_1').val()
+    var problem_2 = $('#problem_2').val()
+    var problem_3 = $('#problem_3').val()
+    var problem_4 = $('#problem_4').val()
+    all_problen_count = problem_1+problem_2+problem_3+problem_4
+if(all_problen_count != '0000'){
+    $("#to_do_myModal").modal('show');
+} {% endcomment %}
+
+</script>
+<script>
+function xadmin_open(url) {
+    // xadmin打开新标签
+    parent.xadmin.add_tab('待办详情',url,true);
+}
+</script>
+{% endblock %}
+
+<!-- 外部脚本 -->
+{% block jsout %}
+
+{% endblock %}

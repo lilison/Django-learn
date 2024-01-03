@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <style>
+
+    </style>
+
+    <title>
+      {% block title %} {% endblock %}
+    </title>
+    {% block style %} {% endblock %}
+    <!-- favicon.ico 请求 -->
+    <link rel="shortcut icon" href="/static/favicon/favicon.ico">
+    <!--引入jquery-->
+    <script src="{% static 'jquery/jquery-3.3.1.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'jquery/jquery.cookie.js' %}" type="text/javascript"></script>
+
+    
+    <!-- Core -->
+    <script src="{% static 'popper/popper.min.js' %}"></script>
+
+    <!-- bootstrap4 -->
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'boostrap-icon/font/bootstrap-icons.css' %}">
+
+
+
+    <!-- FontAwesome 5 -->
+    <script src="{% static 'fontawesome/js/fontawesome-all.min.js' %}" defer></script>
+    <!-- Page plugins -->
+    <script src="{% static 'bootstrap-select/js/bootstrap-select.min.js' %}"></script>
+    <script src="{% static 'bootstrap-tagsinput/bootstrap-tagsinput.min.js' %}"></script>
+    <script src="{% static 'input-mask/input-mask.min.js' %}"></script>
+    <script src="{% static 'nouislider/js/nouislider.min.js' %}"></script>
+    <script src="{% static 'textarea-autosize/textarea-autosize.min.js' %}"></script>
+    <!-- Theme JS -->
+    <script src="{% static 'theme/theme.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'theme/theme.css' %}">
+
+      <!--引入layer-->
+    <script src="{% static 'layer/layer.js'%}" type="text/javascript"></script>
+
+    <!--引入self-js-->
+    <script src="{% static 'self-js/self-function.js'%}" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'self-css/self-css.css' %}">
+
+
+  </head>
+
+  <body>
+  {% csrf_token %}
+        <!-- 内容 -->
+      {% block content %} {% endblock %}
+    <!-- 内部脚本 -->
+    {% block jsin %} {% endblock %}
+
+    <!-- 外部脚本 -->
+    {% block jsout %} {% endblock %}
+  </body>
+</html>

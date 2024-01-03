@@ -1,0 +1,197 @@
+{% extends 'template-base.html' %} {% load static  %} {% block title %}My Bolg主页 {% endblock %}
+{% block style %}
+    <style>
+
+    </style>
+{% endblock %}
+{% block content %}
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
+    <a class="navbar-brand" href="#">My Bolg</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_example_1" aria-controls="navbar_example_1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar_example_1">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">所有文章</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Django</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Python</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">JS</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbar_1_dropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">更多</a>
+          <div class="dropdown-menu" aria-labelledby="navbar_1_dropdown_1">
+            <a class="dropdown-item" href="#">Java</a>
+            <a class="dropdown-item" href="#">C/C++</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">破解</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        {% comment %} <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="#"><i class="fas fa-cogs"></i></a>
+        </li> {% endcomment %}
+        {% if user.is_authenticated %} 
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-link-icon" href="#" id="navbar_1_dropdown_2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell"></i></a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu-xl py-0">
+            <div class="py-3 px-3">
+              <h5 class="heading h6 mb-0">Notifications</h5>
+            </div>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                <div class="list-group-img">
+                  <span class="avatar bg-purple">JD</span>
+                </div>
+                <div class="list-group-content">
+                  <div class="list-group-heading">Johnyy Depp <small>10:05 PM</small></div>
+                  <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                <div class="list-group-img">
+                  <span class="avatar bg-pink">TC</span>
+                </div>
+                <div class="list-group-content">
+                  <div class="list-group-heading">Tom Cruise <small>10:05 PM</small></div>
+                  <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                <div class="list-group-img">
+                  <span class="avatar bg-blue">WS</span>
+                </div>
+                <div class="list-group-content">
+                  <div class="list-group-heading">Will Smith <small>10:05 PM</small></div>
+                  <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p>
+                </div>
+              </a>
+            </div>
+            <div class="py-3 text-center">
+              <a href="#" class="link link-sm link--style-3">View all notifications</a>
+            </div>
+          </div>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-link-icon" href="#" id="navbar_1_dropdown_3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">
+              <span class="float-right badge badge-primary">4</span>
+              <i class="fas fa-envelope text-primary"></i>Messages
+            </a>
+            {% comment %} <a class="dropdown-item" href="#">
+              <i class="fas fa-cog text-primary"></i>Settings
+            </a> {% endcomment %}
+            <div class="dropdown-divider" role="presentation"></div>
+            <a class="dropdown-item" href="/log-out">
+              <i class="fas fa-sign-out-alt text-primary"></i>退出登录
+            </a>
+          </div>
+        </li>
+        {% else %} 
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="/login/">登录</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+ </nav>
+ <main class="main">
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Hello, world!</h1>
+      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+      {% comment %} <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p> {% endcomment %}
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Standing on the frontline when the bombs start to fall. Heaven is jealous of our love, angels are crying from up above. Can't replace you with a million rings. Boy, when you're with me I'll give you a taste. There’s no going back. Before you met me I was alright but things were kinda heavy. Heavy is the head that wears the crown.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Playing ping pong all night long, everything's all neon and hazy. Yeah, she's so in demand. She's sweet as pie but if you break her heart. But down to earth. It's time to face the music I'm no longer your muse. I guess that I forgot I had a choice.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="my-3 p-3 bg-white rounded shadow-sm">
+          <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      
+            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+              <strong class="d-block text-gray-dark">@username</strong>
+              Playing ping pong all night long, everything's all neon and hazy. Yeah, she's so in demand. She's sweet as pie but if you break her heart. But down to earth. It's time to face the music I'm no longer your muse. I guess that I forgot I had a choice.
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"></rect><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+      
+            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+              <strong class="d-block text-gray-dark">@username</strong>
+              Standing on the frontline when the bombs start to fall. Heaven is jealous of our love, angels are crying from up above. Can't replace you with a million rings. Boy, when you're with me I'll give you a taste. There’s no going back. Before you met me I was alright but things were kinda heavy. Heavy is the head that wears the crown.
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6f42c1"></rect><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text></svg>
+      
+            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+              <strong class="d-block text-gray-dark">@username</strong>
+              Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.
+            </p>
+          </div>
+          <small class="d-block text-right mt-3">
+            <a href="#">All updates</a>
+          </small>
+        </div>
+      </div>
+  
+    <hr>
+  
+  </div>
+ </maain>
+
+ <footer class="container">
+  <p>© Company 2017-2023</p>
+</footer>
+
+
+
+
+
+
+{% endblock %}
+
+
+<!-- 外部脚本 -->
+{% block jsout %}
+{#<script src="{% static 'js/app_equipment_manage_Home.js' %}?{% now 'U' %}" type="text/javascript"></script>#}
+<!-- 引入自定义js -->
+<script>
+
+</script>
+{% endblock %}

@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -27,7 +26,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,7 +35,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app_user'
+    # 自定义应用
+    # 第三方应用
+    'django_middleware_global_request',  # 全局请求中间件
+    # 自己写的应用
+    'app_user',  # 用户应用
+    'app_middle_ware',  # 中间件应用
 ]
 
 MIDDLEWARE = [
@@ -48,6 +51,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #  第三方中间件
+    'django_middleware_global_request.middleware.GlobalRequestMiddleware',  # 全局请求中间件
+    # 自己写的中间件
+    'app_middle_ware.auth_middle_ware.AuthMiddleWare',  # 权限中间件
+
 ]
 
 ROOT_URLCONF = 'Django_learn.urls'
@@ -55,7 +63,9 @@ ROOT_URLCONF = 'Django_learn.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # 模板文件目录
+        'DIRS': [BASE_DIR / 'templates']
+        ,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -70,7 +80,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Django_learn.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
@@ -80,7 +89,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -100,7 +108,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
@@ -114,7 +121,6 @@ USE_L10N = True
 
 USE_TZ = False
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
@@ -123,16 +129,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace('\\', '/')  # 设置静态�
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),
                     os.path.join(BASE_DIR, "media"),)
 
-
 # 设置STATIC_URL，这是静态文件的基本URL
 STATIC_URL = '/static/'
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 
 SERVER_LOGS_FILE = os.path.join(BASE_DIR, "logs", "server.log")
 ERROR_LOGS_FILE = os.path.join(BASE_DIR, "logs", "error.log")
