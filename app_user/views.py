@@ -9,7 +9,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.hashers import make_password
 from django.db.models import Q
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
 from django.utils.decorators import method_decorator
 from django.views.generic.base import View
@@ -23,17 +23,17 @@ from app_user.utils.send_email import send_user_email, is_smtp_server_available
 class SetNewWebEmail(View):
     @staticmethod
     def post(request):
-        print(request.POST)
         email = request.POST.get('email')
+        print(email)
         password = request.POST.get('password')
         smtp_server = request.POST.get('email_server')
         smtp_port = request.POST.get('email_port')
         ttls = request.POST.get('ttls')
         if is_smtp_server_available(smtp_server, smtp_port, email, password, ttls):
-            send_user_email(email,'register')
-            return HttpResponseRedirect('')
+            EmailInfo.objects.create(email=email, email_host=smtp_server, email_port=smtp_port,email_type='send')
+            return HttpResponseRedirect('/')
         else:
-            return HttpResponseRedirect('')
+            return HttpResponse('邮箱配置错误')
 
 
 class Home(View):
@@ -100,8 +100,9 @@ class LoginView(View):
         data = dict()
         email_or_username = request.POST.get('email_or_username', None)  # 从请求的表单数据中获取username的值
         pass_word = request.POST.get('password', None)  # 从请求的表单数据中获取password的值
+        # 查询用户名为user_name的用户
         temp_user = User.objects.filter(
-            Q(email=email_or_username) | Q(username=email_or_username)).first()  # 查询用户名为user_name的用户
+            Q(email__iexact=email_or_username) | Q(username__iexact=email_or_username)).first()
         user = authenticate(username=temp_user, password=pass_word)  # 对用户进行身份验证
         if not user:  # 判断用户身份验证是否成功
             msg_dict = {'msg_type': 'warning', 'content': '用户名或密码错误'}
