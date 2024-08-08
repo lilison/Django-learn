@@ -153,11 +153,11 @@ class RegisterView(View):
         data['before_step'] = before_step
         register_form = RegisterForm(request.POST)
         if register_form.is_valid():
-            if User.objects.filter(username=username).exists():
+            if User.objects.filter(username__iexact=username).exists():
                 msg_dict = {'msg_type': 'warning', 'content': '用户名已经被注册，请更换一个'}
                 data['msg'] = msg_dict
                 return render(request, 'register.html', data)
-            if User.objects.filter(email=email).exists():
+            if User.objects.filter(email__iexact=email).exists():
                 msg_dict = {'msg_type': 'warning', 'content': '邮箱已经被注册，请更换一个'}
                 data['msg'] = msg_dict
                 return render(request, 'register.html', data)
